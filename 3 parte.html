@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/parte 3.css">
+    <title>Formulário de satisfação do site sobre HTML5</title>
+</head>
+<body>
+
+   <nav class="menu-site">
+    <ul>
+        <li><a href="1 parte.html">Início</a></li>
+        <li><a href="2 parte.html">Tabelas</a></li>
+        <li><a href="3 parte.html">Formulário</a></li>
+    </ul>
+</nav>
+
+<br><br>
+
+
+<section class="formulario" style="margin-top: 30px;">
+    <h2>Deixe sua opinião sobre o site</h2>
+
+    
+    <form action="https://formsubmit.co/joaovictor.alfredo2009@gmail.com" method="POST">
+
+        
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="nota">Nota para o site (1 a 5):</label>
+        <select id="nota" name="nota" required>
+            <option value="" disabled selected>Escolha uma nota</option>
+            <option value="1">1 - Péssimo</option>
+            <option value="2">2 - Ruim</option>
+            <option value="3">3 - Regular</option>
+            <option value="4">4 - Bom</option>
+            <option value="5">5 - Excelente</option>
+        </select>
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" rows="5" placeholder="Escreva aqui sua opinião..." required></textarea>
+
+        <label>Você recomendaria este site?</label>
+        <div class="opcoes-recomendacao">
+            <label><input type="radio" name="recomenda" value="Sim" required> Sim</label>
+            <label><input type="radio" name="recomenda" value="Não"> Não</label>
+        </div>
+
+        <button type="submit">Enviar feedback</button>
+    </form>
+</section>
+
+
+</body>
+</html>
