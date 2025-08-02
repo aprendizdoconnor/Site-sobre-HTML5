@@ -9,33 +9,36 @@ body {
 
 .menu-site {
     position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
+    top: 0; left: 0; right: 0;
+    background-color: #222;
+    padding: 10px 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
 .menu-site ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 15px 0;
-    margin: 0;
+    list-style: none;
+}
+
+.menu-site li {
+    margin: 0 15px;
 }
 
 .menu-site a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.menu-site a:hover {
-    background-color: #555;
+.menu-site a:hover,
+.menu-site a:focus {
+    background-color: #00ccff;
+    color: #222;
+    outline: none;
 }
 
 main {
